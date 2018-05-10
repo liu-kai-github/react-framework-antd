@@ -87,10 +87,22 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": "css"
+        }
+      ]
     ]
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "."
+  "homepage": ".",
+  "devDependencies": {
+    "babel-plugin-import": "^1.7.0"
+  }
 }
