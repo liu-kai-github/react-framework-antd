@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import {Button} from 'antd';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,7 +16,7 @@ class Index extends Component {
                 <p className="App-intro">
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
-                <Button type="primary">Button</Button>
+                <Button type="primary"><Link to="/dashboard">Home</Link></Button>
             </div>
         );
     }
