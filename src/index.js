@@ -6,13 +6,13 @@ import {
     HashRouter as Router,
 } from "react-router-dom";
 
-import IndexRoutes from "src/routes/index.js";
+import {AppRoutes} from "src/routes/";
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <Router>
-        <IndexRoutes/>
+        <AppRoutes/>
     </Router>,
     document.getElementById('root')
 );
