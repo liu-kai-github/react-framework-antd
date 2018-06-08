@@ -13,6 +13,7 @@
 
 #components-form-demo-normal-login .login-form {
     max-width: 340px;
+    height: 280px;
     border: 1px solid #eee;
     padding: 20px;
 }

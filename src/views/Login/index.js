@@ -6,14 +6,26 @@ import './index.css';
 const FormItem = Form.Item;
 
 class NormalLoginForm extends React.Component {
-    handleSubmit = (e) => {
+    constructor(props) {
+        super(props);
+
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    componentDidMont() {
+
+    }
+
+    handleSubmit(e) {
         e.preventDefault();
+        console.log(this.props);
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values);
+                
             }
         });
-    }
+    };
 
     render() {
         const {getFieldDecorator} = this.props.form;
@@ -24,7 +36,8 @@ class NormalLoginForm extends React.Component {
                         {getFieldDecorator('userName', {
                             rules: [{required: true, message: 'Please input your username!'}],
                         })(
-                            <Input prefix={<Icon type="user" style={{color: 'rgba(0,0,0,.25)'}}/>} placeholder="Username"/>
+                            <Input prefix={<Icon type="user" style={{color: 'rgba(0,0,0,.25)'}}/>}
+                                   placeholder="Username"/>
                         )}
                     </FormItem>
                     <FormItem>
