@@ -6,7 +6,7 @@ import {
     HashRouter as Router,
 } from "react-router-dom";
 
-import {AppRoutes} from "src/routes/";
+import {AppRoutes} from "src/routes";
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
