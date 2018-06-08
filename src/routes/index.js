@@ -5,17 +5,18 @@ import {
 } from "react-router-dom";
 
 import App from "src/views/App";
+import Dashboard from "../layouts/Dashboard";
 
 function IndexRoutes() {
     return (
         <Switch>
             <Route
-                path="/"
+                path="/dashboard"
                 // key={key}
-                component={App}
+                component={Dashboard}
             />
             <Route
-                path="/app"
+                path="/"
                 component={App}
             />
         </Switch>
