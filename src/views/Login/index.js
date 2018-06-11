@@ -22,12 +22,10 @@ class NormalLoginForm extends React.Component {
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values);
-                if (values.userName === 'LiuYujing' && values.password === 'LiuKai') {
-                    console.log(this.props);
-                    this.props.history.push({
-                        pathname: `${this.props.match.path}dashboard`,
-                    });
-                }
+
+                this.props.history.push({
+                    pathname: `${this.props.match.path}dashboard`,
+                });
             }
         });
     };
