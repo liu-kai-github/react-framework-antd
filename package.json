@@ -93,7 +93,7 @@
         "import",
         {
           "libraryName": "antd",
-          "style": "css"
+          "style": true
         }
       ]
     ]
@@ -101,9 +101,14 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "theme": {
+    "@primary-color": "#ff00ff"
+  },
   "homepage": ".",
   "devDependencies": {
     "archiver": "^2.1.1",
-    "babel-plugin-import": "^1.7.0"
+    "babel-plugin-import": "^1.7.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0"
   }
 }
