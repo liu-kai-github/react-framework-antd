@@ -2,6 +2,7 @@ import React from 'react';
 import {
     Switch,
     Route,
+    Redirect,
 } from "react-router-dom";
 
 // import App from "src/views/App";
@@ -11,13 +12,18 @@ import NormalLogin from "src/views/Login";
 function AppRoutes() {
     return (
         <Switch>
+            <Redirect
+                from='/'
+                to='/NormalLogin'
+                exact
+            />
+            <Route
+                path="/NormalLogin"
+                component={NormalLogin}
+            />
             <Route
                 path="/dashboard"
                 component={Dashboard}
-            />
-            <Route
-                path="/"
-                component={NormalLogin}
             />
         </Switch>
     );

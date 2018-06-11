@@ -1,5 +1,8 @@
 import React from 'react';
+import {Switch, Route} from 'react-router-dom';
 import {Layout, Menu, Breadcrumb, Icon} from 'antd';
+
+import {DashboardRouter} from 'src/routes';
 
 import './index.css';
 
@@ -62,7 +65,8 @@ class Dashboard extends React.Component {
                             <Breadcrumb.Item>Bill</Breadcrumb.Item>
                         </Breadcrumb>
                         <div style={{padding: 24, background: '#fff', minHeight: 360}}>
-                            Bill is a cat.
+                            {/*Bill is a cat.、*/}
+                            <DashboardRouter {...this.props} />
                         </div>
                     </Content>
                     <Footer style={{textAlign: 'center'}}>

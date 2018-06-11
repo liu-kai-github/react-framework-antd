@@ -5,7 +5,7 @@ import {Button} from 'antd';
 import logo from './logo.svg';
 import './App.css';
 
-class Index extends Component {
+class App extends Component {
     render() {
         return (
             <div className="App">
@@ -22,4 +22,4 @@ class Index extends Component {
     }
 }
 
-export default Index;
+export default App;
