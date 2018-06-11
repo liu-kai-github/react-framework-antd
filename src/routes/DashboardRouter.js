@@ -4,7 +4,7 @@ import {
     Route,
     Redirect,
 } from "react-router-dom";
-import {Dashboard} from "../layouts";
+// import {Dashboard} from "../layouts";
 import App from "../views/App";
 
 function DashboardRouter({match}) {

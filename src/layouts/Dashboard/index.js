@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom';
+// import {Switch, Route} from 'react-router-dom';
 import {Layout, Menu, Breadcrumb, Icon} from 'antd';
 
 import {DashboardRouter} from 'src/routes';
