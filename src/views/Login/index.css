@@ -8,9 +8,14 @@
     align-items: center;
     /*padding-top: 150px;*/
     justify-content: center;
+    background-image: url("../../assets/img/logion-background-img.jpg");
+    /*ba*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
 }
 
-#components-form-demo-normal-login > div{
+#components-form-demo-normal-login > div {
     padding-bottom: 120px;
 }
 
@@ -19,6 +24,7 @@
     height: 280px;
     border: 1px solid #eee;
     padding: 20px;
+    background-color: rgba(255, 255, 255, .4);
 }
 
 #components-form-demo-normal-login .login-form-forgot {

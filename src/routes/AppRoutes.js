@@ -5,8 +5,9 @@ import {
 } from "react-router-dom";
 
 // import App from "src/views/App";
-import {Dashboard} from "src/layouts";
-import NormalLogin from "src/views/Login";
+import {Dashboard} from 'src/layouts';
+import NormalLogin from 'src/views/Login';
+import PictureFrame from 'src/views/PictureFrame';
 
 function AppRoutes() {
     return (
@@ -14,6 +15,10 @@ function AppRoutes() {
             <Route
                 path="/dashboard"
                 component={Dashboard}
+            />
+            <Route
+                path="/picture-frame"
+                component={PictureFrame}
             />
             <Route
                 path="/"

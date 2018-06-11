@@ -25,7 +25,7 @@ class NormalLoginForm extends React.Component {
                 if (values.userName === 'LiuYujing' && values.password === 'LiuKai') {
                     console.log(this.props);
                     this.props.history.push({
-                        pathname: `${this.props.match.path}dashboard`,
+                        pathname: `${this.props.match.path}picture-frame`,
                     });
                 }
             }
