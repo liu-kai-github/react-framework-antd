@@ -1,11 +1,10 @@
 import React from 'react';
-// import {Switch, Route} from 'react-router-dom';
-import {Layout, Breadcrumb} from 'antd';
+import {Layout} from 'antd';
 
 import {DashboardRouter} from 'src/routes';
-
+import AppMenu from 'src/views/AppMenu';
+import AppBreadcrumb from 'src/views/AppBreadcrumb';
 import './index.css';
-import AppMenu from "src/views/AppMenu";
 
 const {Header, Content, Footer, Sider} = Layout;
 
@@ -27,7 +26,7 @@ class Dashboard extends React.Component {
      * @description 展开-收起时的回调函数，有点击 trigger 以及响应式反馈两种方式可以触发
      */
     onCollapse(collapsed) {
-        console.log(collapsed);
+        // console.log(collapsed);
         this.setState({collapsed});
     }
 
@@ -56,12 +55,13 @@ class Dashboard extends React.Component {
                     {/* 页头 */}
                     <Header style={{background: '#fff', padding: 0}}/>
 
-                    {/* 内容主体 */}
+                    {/* 页面内容 */}
                     <Content style={{margin: '0 16px'}}>
-                        <Breadcrumb style={{margin: '16px 0'}}>
-                            <Breadcrumb.Item>User</Breadcrumb.Item>
-                            <Breadcrumb.Item>Bill</Breadcrumb.Item>
-                        </Breadcrumb>
+
+                        {/* 面包屑 */}
+                        <AppBreadcrumb {...this.props}/>
+
+                        {/* 内容主体 */}
                         <div style={{padding: 24, background: '#fff', minHeight: 360}}>
                             {/*Bill is a cat.、*/}
                             <DashboardRouter {...this.props} />

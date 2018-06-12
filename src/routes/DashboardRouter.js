@@ -24,32 +24,26 @@ function DashboardRouter({match}) {
             <Route
                 path={`${match.url}/option1`}
                 component={Option1}
-                exact
             />
             <Route
                 path={`${match.url}/option2`}
                 component={Option2}
-                exact
             />
             <Route
                 path={`${match.url}/tom`}
                 component={Tom}
-                exact
             />
             <Route
                 path={`${match.url}/bill`}
                 component={Bill}
-                exact
             />
             <Route
                 path={`${match.url}/alex`}
                 component={Alex}
-                exact
             />
             <Route
                 path={`${match.url}/team1`}
                 component={Team1}
-                exact
             />
             <Route
                 path={`${match.url}/team2`}

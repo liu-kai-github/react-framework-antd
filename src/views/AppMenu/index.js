@@ -44,6 +44,8 @@ class AppMenu extends React.Component {
             case 'team2':
                 openKeys = ['team'];
                 break;
+            default:
+                break;
         }
 
         return (
