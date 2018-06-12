@@ -15,8 +15,11 @@ class AppMenu extends React.Component {
     /**
      * @description 点击 MenuItem 调用此函数
      */
-    onMenuClick(item, key, keyPath) {
-        console.log(item, key, keyPath, 'IKK');
+    onMenuClick(item) {
+        // console.log(item, 'IKK');
+        // console.log(this.props, 'TPTP');
+        const {match, history} = this.props;
+        history.push(`${match.url}/${item.key}`)
     }
 
     /**
