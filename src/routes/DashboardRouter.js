@@ -4,25 +4,64 @@ import {
     Route,
     Redirect,
 } from "react-router-dom";
-// import {Dashboard} from "../layouts";
-import App from "../views/App";
+import Option1 from "src/views/Option1";
+import Option2 from "src/views/Option2";
+import Tom from "src/views/User/Tom";
+import Bill from "src/views/User/Bill";
+import Alex from "src/views/User/Alex";
+import Team1 from "src/views/Team/Team1";
+import Team2 from "src/views/Team/Team2";
+import File from "src/views/File";
 
 function DashboardRouter({match}) {
     return (
         <Switch>
             <Redirect
                 from={match.url}
-                to={`${match.url}/app`}
+                to={`${match.url}/option1`}
                 exact
             />
             <Route
-                path={`${match.url}/app`}
-                component={App}
+                path={`${match.url}/option1`}
+                component={Option1}
                 exact
             />
-            {/*<Route*/}
-                {/*path="/dashboard"*/}
-                {/*component={Dashboard}*/}
+            <Route
+                path={`${match.url}/option2`}
+                component={Option2}
+                exact
+            />
+            <Route
+                path={`${match.url}/tom`}
+                component={Tom}
+                exact
+            />
+            <Route
+                path={`${match.url}/bill`}
+                component={Bill}
+                exact
+            />
+            <Route
+                path={`${match.url}/alex`}
+                component={Alex}
+                exact
+            />
+            <Route
+                path={`${match.url}/team1`}
+                component={Team1}
+                exact
+            />
+            <Route
+                path={`${match.url}/team2`}
+                component={Team2}
+            />
+            <Route
+                path={`${match.url}/file`}
+                component={File}
+            />
+            {/*<Redirect*/}
+                {/*path="/not-found"*/}
+                {/*component={Page404}*/}
             {/*/>*/}
         </Switch>
     );
