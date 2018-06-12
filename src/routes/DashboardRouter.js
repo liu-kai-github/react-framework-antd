@@ -32,27 +32,27 @@ function DashboardRouter({match}) {
                 exact
             />
             <Route
-                path={`${match.url}/user/tom`}
+                path={`${match.url}/tom`}
                 component={Tom}
                 exact
             />
             <Route
-                path={`${match.url}/user/bill`}
+                path={`${match.url}/bill`}
                 component={Bill}
                 exact
             />
             <Route
-                path={`${match.url}/user/alex`}
+                path={`${match.url}/alex`}
                 component={Alex}
                 exact
             />
             <Route
-                path={`${match.url}/team/team1`}
+                path={`${match.url}/team1`}
                 component={Team1}
                 exact
             />
             <Route
-                path={`${match.url}/team/team2`}
+                path={`${match.url}/team2`}
                 component={Team2}
             />
             <Route
