@@ -24,7 +24,7 @@ class NormalLoginForm extends React.Component {
                 console.log('Received values of form: ', values);
 
                 this.props.history.push({
-                    pathname: `${this.props.match.path}dashboard`,
+                    pathname: `/dashboard`,
                 });
             }
         });
